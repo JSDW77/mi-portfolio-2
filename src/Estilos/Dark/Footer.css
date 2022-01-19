@@ -1,0 +1,164 @@
+#dm-footer-cont{
+    width: 100%;
+    height: 255px;
+    background-color: #1B2327;
+}
+
+#f-cont{
+    max-width: 1030px;
+    height: 166px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#f-cont p{
+    margin:20px 20px 20px 0px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+#info-cont{
+    display: flex;
+}
+
+#info-line{
+    margin: 20px 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(56, 174, 204,0.3);
+}
+
+#cont-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+#cont-left{
+    width: 50%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+#cont-left div{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.sm-icons{
+    width:50px;
+    height:50px;
+    color:#ffffff;
+    margin: 10px 20px;
+    transition: all 1s;
+}
+.sm-icons:hover{
+    color:#23CE6B;  
+    transform: scale(1.2);
+}
+
+#mail-ico{
+    width:30px;
+    height:30px;
+    color:#ffffff;
+    margin-right: 20px; 
+    transition: all 1s;
+}
+
+#mail-ico:hover{
+    color:#23CE6B;
+    transform: scale(1.5);  
+}
+
+#copy{
+    width: 100%;
+}
+#copy h5 {
+    text-align: center;
+    color: #505050;
+    font-size: 15px;
+    font-weight: lighter;
+    background-color: #1B2327;
+}
+
+@media only screen and (min-width: 857px) and (max-width: 1060px){
+    #cont-right{       
+        width: fit-content;
+    }
+
+    
+    #cont-left{
+    width: 40%;
+        }
+    #info-cont{
+    display: flex;
+    justify-content: center;
+    }
+
+    #f-cont{
+        max-width: fit-content;
+        height: fit-content;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen  and (max-width: 870px){
+
+    #f-cont{
+        max-width: 100%;
+        height: fit-content;
+    }
+
+    #dm-footer-cont{
+        width: 100%;
+        height: fit-content;
+        background-color: #1B2327;
+    }
+
+    #info-cont{
+        flex-direction: column;
+        align-items: center;
+        }
+
+    #f-cont p{
+        margin:0px 5px;
+        font-size: 14px;
+    }
+    #cont-left div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sm-icons{
+        width:30px;      
+        margin: 10px 10px;
+    }
+
+    #mail-ico{   
+        width: 20px;    
+        margin-right: 0px; 
+    }
+
+    #cont-right{       
+        align-items: center;
+    }
+
+    #cont-right div p {
+        display: none;
+    }
+    #cont-left{       
+        margin: 15px 0;
+    }
+    #cont-left p:first-child{
+            display: none;
+            }
+}

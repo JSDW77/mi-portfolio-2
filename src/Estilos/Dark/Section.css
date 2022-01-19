@@ -1,0 +1,60 @@
+#dm-section-cont{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+#sect-line{
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+
+#sect-title{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 0 40px;
+    color: #000000;
+    background-color: #ffffff;
+    letter-spacing: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1310px){
+
+    #dm-section-cont{
+        height: 100px;
+    }
+
+    #sect-title{
+        font-size: 40px;
+        padding: 0;
+        letter-spacing: 5px;  
+    }
+
+    #sect-line{
+        height: 1px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    #dm-section-cont{
+        height: 50px;
+    }
+
+    #sect-title{
+        font-size: 20px;  
+        padding:0;
+        letter-spacing: 5px;
+    }
+
+    #sect-line{
+        height: 1px;
+    }
+
+}

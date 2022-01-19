@@ -1,0 +1,192 @@
+#dm-skills-cont{
+    width: 70%;
+    margin: 50px auto;
+    height: 860px;
+    display: flex;
+}
+
+#skill-description{
+    width: 60%;
+    height: 100%;
+}
+
+
+#skill-description h2{
+    font-size: 48px;
+    font-weight: 400;
+    color: #23CE6B;
+    margin-bottom: 30px;
+}
+
+#skills-line{
+    width: 100%;
+    height: 1px;
+    background-color: #38AECC;
+    margin: 40px 0;
+}
+
+#skill-description p{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#skill-logos{
+    width: 40%;
+    height: 100%;
+}
+
+#dev-logos{
+    width: 100%;
+    height: 500px;
+    background-image: url('../../Imagenes/dev-skills.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#dis-logos{
+    width: 100%;
+    height: calc(100% - 500px);
+    background-image: url('../../Imagenes/dis-skills.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1900px){
+
+    #dm-skills-cont{
+        width: 90%;
+        margin: 25px auto;
+        justify-content: center;
+    }
+    
+    #skill-description h2{
+        font-size: 30px;
+    }
+
+    #skill-description p{
+        font-size: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    #skill-description{
+        width: fit-content;
+        height: 100%;
+    }
+
+    #dev-logos{
+        height: 400px;
+    }
+
+    #dis-logos{
+        height:170px;
+        background-size: contain;
+        margin-top: 80px;
+    }
+}
+@media only screen and (min-width: 860px) and (max-width: 1200px){
+
+    #dm-skills-cont{
+        width: 90%;
+        margin-top: 25px;
+        margin-left: auto;
+    }
+    
+    #skill-description{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #skill-logos{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #skill-description h2{
+        font-size: 30px;
+    }
+
+    #skill-description p{
+        font-size: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    
+    #dev-logos{
+        height: 400px;
+    }
+
+    #dis-logos{
+        height:170px;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 860px){
+
+    #skill-description h2{
+        font-size: 24px;
+    }
+
+    #skill-description p{
+        font-size: 16px;
+    }
+    
+    #dm-skills-cont{
+        width: 90%;
+        height: fit-content;
+        margin: 25px auto;
+        justify-content: space-evenly;
+    }
+
+    #dev-logos{
+        height: 300px;
+    }
+
+    #dis-logos{
+        height:130px;
+        background-size: contain;
+        margin-top: 100px;
+    }
+    #skill-description{
+        width: 75%;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    #skill-logos{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    #skill-description h2{
+        font-size: 24px;
+    }
+
+    #skill-description p{
+        font-size: 16px;
+    }
+    
+    #dm-skills-cont{
+        width: 90%;
+        height: fit-content;
+        margin: 25px auto;
+        justify-content: space-evenly;
+    }
+   
+    #skill-description{
+        width: 75%;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    #skill-logos{
+        display: none;
+    }
+}
